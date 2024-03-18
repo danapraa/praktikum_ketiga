@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizontal Navigation</title>
+    <style>
+      ul {
+        font-family: sans-serif;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      ul li {
+        background-color: rgb(156, 145, 145);
+      }
+      li a {
+        display: block;
+        color: rgb(255, 251, 251);
+        padding: 1cm 2cm;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-bottom: 5px solid white;
+      }
+      li a:hover {
+        background-color: gray;
+        color: white;
+        transition: background-color 0.3s;
+        border-bottom: 5px solid #2f00ff;
+      }
+      li a.active {
+        background-color: #5ac2e7;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">PROJECT</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
